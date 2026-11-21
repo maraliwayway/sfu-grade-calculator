@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFU Grade Calculator</title>
+  <meta name="description" content="Track SFU course grades and your term GPA. Saves in your browser.">
+  <meta name="theme-color" content="#a6192e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23a6192e'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EA+%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <span class="brand">SFU Grade Calculator</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="tabs" id="tabs" aria-label="Semesters"></nav>
+    <div id="app"></div>
+  </main>
+
+  <footer class="wrap foot">
+    <details class="defaults">
+      <summary>Default grade cutoffs</summary>
+      <p>Used by every course that doesn't have its own cutoffs. Starts on the SIAT recommended scale. Your syllabus is the final word.</p>
+      <div id="defaults"></div>
+    </details>
+    <div class="data">
+      <button class="link" data-act="export">Export backup</button>
+      <button class="link" data-act="import">Import backup</button>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+    <p class="fine">Everything is saved in this browser only. Export a backup before clearing site data or switching devices.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
