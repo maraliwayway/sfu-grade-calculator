@@ -1,6 +1,6 @@
 # SFU Grade Calculator
 
-Track your SFU course grades and term GPA. 
+Track your SFU course grades and term GPA!
 
 ## Features
 
