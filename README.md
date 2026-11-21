@@ -13,24 +13,6 @@ Track your SFU course grades and term GPA.
 - CGPA after the term, from your current CGPA and units done
 - Export/import a JSON backup; open tabs stay in sync
 
-## Deploy to GitHub Pages
-
-1. Create a new public repository on GitHub, e.g. `sfu-grades`.
-2. Upload `index.html`, `style.css` and `app.js` to the root of the repo (**Add file → Upload files**, then commit).
-3. Go to **Settings → Pages**. Under **Build and deployment**, pick **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-4. After a minute your site is live at `https://<your-username>.github.io/sfu-grades/`.
-
-If you use git instead of uploading:
-
-```bash
-git init
-git add index.html style.css app.js README.md
-git commit -m "SFU grade calculator"
-git branch -M main
-git remote add origin https://github.com/<your-username>/sfu-grades.git
-git push -u origin main
-```
-
 ## Run locally
 
 Open `index.html` in a browser, or serve the folder:
